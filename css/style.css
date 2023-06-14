@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --primary-color: #125de9;
+    --btn-color: #00c070;
+}
+html, body{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+h1, p{
+    margin-bottom: 20px;
+}
+img{
+    width: 100%;
+    
+}
+#header-main{
+    width: 100%;
+    height: 4rem;
+    background-color: var(--primary-color);
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px 5px 50px;
+    
+}
+#nav-main .logo{
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: white;
+}
+#nav-main ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+#nav-main ul a{
+    text-decoration: none;
+    color: rgb(204, 204, 200);
+    font-weight: 700;
+    padding: 2px 0;
+}
+#nav-main ul a:hover{
+    border-bottom: 3px solid;
+    transition: 0.1s ease;
+}
+#nav-main ul a.active{
+    border-bottom: 2px solid;
+}
+.login-main{
+
+}
+.login-main button{
+    padding: 7px 30px;
+    background-color: var(--btn-color);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+.login-main button:hover{
+    background-color: #01995a;
+}
+
+#about-section{
+    background-color: var(--primary-color);
+}
+.toggle{
+   display: none;
+}
+.boxes{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  
+}
+.boxes .box{
+    width: 500px;
+    height: auto;
+    
+    
+}
+.about-title{
+    color: rgb(209, 207, 207);
+    font-size: 3rem;
+    text-shadow: 3px 0 3px rgb(0, 0, 0, 0.8);
+}
+.about-des{
+    color: #cecece;
+    letter-spacing: 0.1rem;
+}
+#about-btn{
+    padding: 14px 50px;
+    background-color: var(--btn-color);
+    border: 0;
+    font-size: 1rem;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+
+/* Styles for smartphones */
+@media only screen and (max-width: 480px) {
+    #nav-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        
+        
+      }
+      
+      #nav-main.nav-active{
+        visibility: visible;
+      }
+      #nav-main ul{
+        display: inline;
+        
+        
+      }
+      #nav-main ul li{
+        margin-bottom: 20px;
+      }
+      .toggle{
+        position: relative;
+        top: -220px;
+        left: 380px;
+        display: block !important;
+      }
+      #menu-bar{
+        color: wheat;
+
+      }
+      #menu-bar.menu-hide{
+        visibility: hidden;
+      }
+      #close-bar{
+        position: relative;
+        right: 24px;
+        color: wheat;
+        visibility: hidden;
+      }
+      #close-bar.close-active{
+        visibility: visible;
+      }
+      /* about section  */
+      .boxes{
+        display: flex;
+        flex-direction: column;
+        max-width: 650px;
+        margin: auto;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+      }
+      .boxes .flex-centter{
+        text-align: center;
+      }
+      .boxes .box{
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+  }
+  
+  /* Styles for tablets */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+      #nav-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+      }
+      #nav-main ul{
+        display: inline;
+        
+      }
+      #nav-main ul li{
+        margin-bottom: 20px;
+      }
+      .toggle{
+        position: absolute;
+        top: -220px;
+        left: 650px;
+      }
+      #menu-bar{
+        color: wheat;
+      }
+      #close-bar{
+        position: relative;
+        right: 24px;
+        color: wheat;
+        visibility: hidden;
+      }
+      /* about section  */
+      .boxes{
+        max-width: 650px;
+        margin: auto;
+        padding: 12px;
+      }
+      .boxes .box{
+        width: 300px;
+        height: auto;
+      }
+  }
+
