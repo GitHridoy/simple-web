@@ -126,12 +126,8 @@ img{
 @media only screen and (max-width: 480px) {
     #nav-main{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         visibility: hidden;
-        
-        
-      }
+        }
       
       #nav-main.nav-active{
         visibility: visible;
@@ -146,8 +142,8 @@ img{
       }
       .toggle{
         position: relative;
-        top: -220px;
-        left: 340px;
+        top: -240px;
+        left: 160px;
         display: block !important;
       }
       #menu-bar{
