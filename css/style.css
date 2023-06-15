@@ -134,6 +134,8 @@ img{
 
 #blog-section{
   margin-top: 8rem;
+  background-color: #ecf3f54b;
+  padding: 40px;
   
 }
 .section-title{
@@ -185,6 +187,124 @@ img{
 }
 .learning-box:nth-child(4){
   background-color: #1715a8;
+}
+/* about pop content  */
+#about-pop-content{
+  position: fixed;
+  width: 900px;
+  height: auto;
+  background-color: #292929;
+  top: 10%;
+  left: 20%;
+  padding: 50px 50px;
+  color: rgb(204, 198, 198);
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+  z-index: 2;
+  
+  
+}
+#about-pop-content.about-content-active{
+  visibility: visible;
+  transform: translateY(20px);
+  transition: 0.3s ease;
+}
+#about-pop-content button{
+  padding: 10px 30px;
+  background-color: var(--btn-color);
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#about-pop-content button:hover{
+  background-color: #01995a;
+}
+#about-close{
+  position: relative;
+  top: -428px;
+  left: 640px;
+  cursor: pointer;
+  color: var(--btn-color);
+}
+/* login pop ared  */
+#login-pop{
+  width: 600px;
+  height: auto;
+  position: fixed;
+  top: 15%;
+  left: 30%;
+  visibility: hidden;
+}
+#login-pop.login-pop-active{
+  visibility: visible;
+  transform: translateY(20px);
+  transition: 0.3s ease;
+}
+#login-pop form{
+   width: 100%;
+   background-color: white;
+   padding: 100px 100px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+form input{
+  width: 100%;
+  padding: 7px 7px;
+  margin-bottom: 30px;
+}
+form input[type='email'],
+form input[type='password']{
+  border: 0;
+  border-bottom: 1px solid #ada7a7;
+  outline: none;
+}
+.login-title{
+  position: relative;
+  top: -1rem;
+}
+.login-btn{
+  padding: 8px 20px;
+  width: 100%;
+  border: 0;
+  background-color: var(--btn-color);
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.check{
+  position: relative;
+  left: -190px;
+}
+.check::after{
+  content: 'Remamber';
+  position: relative;
+  left: 210px;
+}
+#login-close{
+  position: relative;
+  top: -300px;
+  left: 460px;
+  cursor: pointer;
+}
+#login-pop-main{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  z-index: 1;
+  visibility: hidden;
+}
+#login-pop-main.login-pop-dark{
+  visibility: visible;
+  
 }
 
 
