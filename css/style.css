@@ -93,6 +93,7 @@ img{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  grid-column-gap: 60px;
   
 }
 .boxes .box{
@@ -168,6 +169,10 @@ img{
   border-radius: 10px;
   box-shadow: 3px 0 3px rgb(0, 0, 0, 0.3);
   
+}
+.learning-box:hover{
+  transform: translateY(-5px);
+  transition: 0.5s ease;
 }
 .learn-content{
   position: relative;
@@ -415,6 +420,35 @@ form input[type='password']{
       .boxes .box{
         width: 300px;
         height: auto;
+      }
+      #about-pop-content{
+        position: fixed;
+        width: 600px;
+        height: auto;
+        background-color: #292929;
+        top: 10%;
+        left: 10%;
+        padding: 50px 50px;
+        color: rgb(204, 198, 198);
+        border-radius: 10px;
+        letter-spacing: 0.1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: 0.3s ease;
+        z-index: 2;
+        
+        
+      }
+      .learning-boxes{
+        flex-direction: column;
+        max-width: 700px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+      }
+      .learning-box{
+        width: 600px;
       }
   }
 
