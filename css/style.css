@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 :root{
-    --primary-color: #312f2f;
+    --primary-color: #053d2e;
     --btn-color: #00c070;
 }
 html, body{
@@ -377,6 +377,12 @@ form input[type='text']{
 .footer-box p{
   color: #adadad;
 }
+.footer-box a:hover{
+  color: #d4d4d4;
+}
+.footer-box p:hover{
+  color: #d4d4d4;
+}
 .footer-box a{
   text-decoration: none;
   color: #adadad;
@@ -569,6 +575,19 @@ form input[type='text']{
       }
       .learning-box{
         width: 600px;
+      }
+      #footer{
+        
+      }
+      .footer-content{
+          max-width: 700px;
+          margin: auto;
+      }
+      .footer-boxes{
+         margin-left: 6rem;
+      }
+      .footer-box{
+        width: 200px;
       }
   }
 
